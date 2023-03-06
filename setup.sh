@@ -2,7 +2,7 @@
 
 
 # step 1
-mkdir trustzone
+mkdir -p trustzone
 cd trustzone
 
 # set system time and date 
