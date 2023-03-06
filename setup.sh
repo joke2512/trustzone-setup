@@ -1,5 +1,3 @@
-#!usr/bin/env bash
-
 sudo timedatectl set-ntp false
 echo "input date YYYY-MM-DD HH:MM:SS"
 read date
