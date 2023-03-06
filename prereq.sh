@@ -46,4 +46,4 @@ sudo apt install \
   xdg-utils \
   xterm \
   xz-utils \
-  zlib1g-dev
+  zlib1g-dev -y

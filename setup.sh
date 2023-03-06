@@ -24,7 +24,7 @@ sudo chmod +x prereq.sh
 
 # step 2
 #install repo
-sudo apt install repo
+sudo apt install repo -y
 
 git config --global user.name Jon
 git config --global user.email joke2512@gmail.com
