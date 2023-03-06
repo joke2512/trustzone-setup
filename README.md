@@ -2,7 +2,7 @@
 
 ## set time and date
 
-'sudo timedatectl set-ntp false'
+´sudo timedatectl set-ntp false´
 sudo timedatectl set-time YYYY-MM-DD
 sudo timedatectl set-time hh:mm:ss
 
