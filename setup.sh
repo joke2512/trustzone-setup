@@ -1,3 +1,7 @@
+# https://optee.readthedocs.io/en/latest/building/gits/build.html#get-and-build-the-solution
+
+
+# step 1
 mkdir trustzone
 cd trustzone
 
@@ -18,6 +22,7 @@ wget https://raw.githubusercontent.com/joke2512/trustzone-setup/main/prereq.sh
 sudo chmod +x prereq.sh
 ./prereq.sh
 
+# step 2
 #install repo
 sudo apt install repo
 
@@ -29,3 +34,14 @@ repo init -u https://android.googlesource.com/platform/manifest -b master
 repo sync -c -j8
 
 make clobber
+
+# step 3
+repo init -u https://github.com/OP-TEE/manifest.git -m rpi3.xml
+repo sync -j4 --no-clone-bundle
+
+# step 4
+cd build
+make -j2 toolchains
+
+#step 5
+make -j `nproc`
