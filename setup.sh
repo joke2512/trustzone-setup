@@ -6,13 +6,13 @@ mkdir -p trustzone
 cd trustzone
 
 # set system time and date 
-sudo timedatectl set-ntp false
-echo "input date YYYY-MM-DD"
-read date
-echo "input date HH:MM:SS"
-read time
-sudo timedatectl set-time $date
-sudo timedatectl set-time $time
+# sudo timedatectl set-ntp false
+# echo "input date YYYY-MM-DD"
+# read date
+# echo "input date HH:MM:SS"
+# read time
+# sudo timedatectl set-time $date
+# sudo timedatectl set-time $time
 
 # update apt 
 sudo apt update 
