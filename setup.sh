@@ -29,11 +29,6 @@ sudo apt install repo -y
 git config --global user.name Jon
 git config --global user.email joke2512@gmail.com
 
-repo init -u https://android.googlesource.com/platform/manifest -b master
-
-repo sync -c -j8
-
-make clobber
 
 # step 3
 repo init -u https://github.com/OP-TEE/manifest.git -m rpi3.xml
